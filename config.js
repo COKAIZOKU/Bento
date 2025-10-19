@@ -11,7 +11,7 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
+	name: '',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
@@ -20,26 +20,26 @@ const CONFIG = {
 	greetingMorning: 'Good morning!',
 	greetingAfternoon: 'Good afternoon,',
 	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	greetingNight: 'Go to sleep!',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
-	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
+	weatherKey: '17814c835e39573bec0309d36b409b28', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
-	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '37.775',
-	defaultLongitude: '-122.419',
+	trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
+	defaultLatitude: '-33.045559',
+	defaultLongitude: '-71.619423',
 
 	// Autochange
-	autoChangeTheme: true,
+	autoChangeTheme: false,
 
 	// Autochange by OS
-	changeThemeByOS: true,
+	changeThemeByOS: false,
 
 	// Autochange by hour options (24hrs format, string must be in: hh:mm)
 	changeThemeByHour: false,
@@ -53,42 +53,80 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
-			name: 'Github',
-			icon: 'github',
-			link: 'https://github.com/',
-		},
-		{
-			id: '2',
 			name: 'Mail',
 			icon: 'mail',
 			link: 'https://mail.protonmail.com/',
 		},
 		{
+			id: '2',
+			name: 'Drive',
+			icon: 'folder',
+			link: 'https://drive.proton.me/',
+		},
+		{
 			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
+			name: 'Calendar',
+			icon: 'calendar',
+			link: 'https://calendar.proton.me/',
 		},
 		{
 			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
+			name: 'ChatGPT',
+			icon: 'message-circle',
+			link: 'https://chatgpt.com//',
 		},
 		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
+			name: 'YouTube',
+			icon: 'youtube',
+			link: 'https://youtube.com/',
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
+			name: 'TickTick',
+			icon: 'list-check',
+			link: 'https://ticktick.com/webapp/',
 		},
 	],
 
+	secondButtonsContainer: [
+		{
+			id: '1',
+			name: 'Music',
+			icon: 'headphones',
+			link: 'https://open.spotify.com',
+		},
+		{
+			id: '2',
+			name: 'twitter',
+			icon: 'twitter',
+			link: 'https://twitter.com/',
+		},
+		{
+			id: '3',
+			name: 'bot',
+			icon: 'bot',
+			link: 'https://discord.com/app',
+		},
+		{
+			id: '4',
+			name: 'Amazon',
+			icon: 'shopping-bag',
+			link: 'https://amazon.com/',
+		},
+		{
+			id: '5',
+			name: 'Hashnode',
+			icon: 'pen-tool',
+			link: 'https://hashnode.com/',
+		},
+		{
+			id: '6',
+			name: 'Figma',
+			icon: 'figma',
+			link: 'https://figma.com/',
+		},
+	],
 	secondButtonsContainer: [
 		{
 			id: '1',
@@ -135,46 +173,46 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'pin',
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Anime',
+					link: 'https://hianime.to/',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Movies',
+					link: 'https://goku.sx/home',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Live',
+					link: 'https://wearechecking.wtf/',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'F1',
+					link: 'https://f1fullraces.com/',
 				},
 			],
 		},
 		{
-			icon: 'coffee',
+			icon: 'github',
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'Github',
+					link: 'https://github.com/',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'Rank',
+					link: 'https://hackerrank.com/',
 				},
 				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'Hack',
+					link: 'https://tryhackme.com/',
 				},
 				{
-					name: 'Slack',
-					link: 'https://www.slack.com',
+					name: 'Code',
+					link: 'https://codeforces.com/',
 				},
 			],
 		},

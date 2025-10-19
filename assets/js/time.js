@@ -3,11 +3,12 @@
 //  ┴ ┴┴ ┴└─┘
 // Set time and Date
 
-window.onload = displayClock();
+const TIME_ZONE = 'America/Santiago'; // set to your zone
+window.onload = displayClock()
+
 function displayClock() {
 	const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-	var d = new Date();
+	var d = new Date(new Date().toLocaleString('en-US', { timeZone: TIME_ZONE }));
 	var mm = monthNames[d.getMonth()];
 	var dd = d.getDate();
 	var min = (mins = ('0' + d.getMinutes()).slice(-2));
