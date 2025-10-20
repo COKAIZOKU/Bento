@@ -17,10 +17,10 @@ const CONFIG = {
 	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
-	greetingAfternoon: 'Good afternoon,',
-	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to sleep!',
+	greetingMorning: 'Good morning! 🥪',
+	greetingAfternoon: 'Good afternoon 🍱',
+	greetingEvening: ' Good evening 🍜',
+	greetingNight: 'Go to sleep! 🍙',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
@@ -73,7 +73,7 @@ const CONFIG = {
 			id: '4',
 			name: 'ChatGPT',
 			icon: 'message-circle',
-			link: 'https://chatgpt.com//',
+			link: 'https://chatgpt.com/',
 		},
 		{
 			id: '5',

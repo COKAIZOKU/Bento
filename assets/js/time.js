@@ -3,7 +3,7 @@
 //  ┴ ┴┴ ┴└─┘
 // Set time and Date
 
-const TIME_ZONE = 'America/Santiago'; // set to your zone
+const TIME_ZONE = 'America/Santiago'; 
 window.onload = displayClock()
 
 function displayClock() {
