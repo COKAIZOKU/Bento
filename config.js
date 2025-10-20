@@ -204,7 +204,7 @@ const CONFIG = {
 				},
 				{
 					name: 'Rank',
-					link: 'https://hackerrank.com/',
+					link: 'https://leetcode.com/',
 				},
 				{
 					name: 'Hack',
